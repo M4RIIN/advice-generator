@@ -22,8 +22,22 @@ module.exports = {
       },
       height: {
         '0.1': '1px',
+      },
+      animation:{
+        'wiggle-fou': 'wiggle 3s linear infinite',
+        'rotateur': 'rotateur 3s linear infinite',
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-6deg)' },
+          '50%': { transform: 'rotate(6deg)' },
+        },
+        rotateur: {
+          '0%, 100%': { transform: 'rotate(360deg)' },
+          '10%': { transform: 'translateY(10px)' },
+        }
       }
-  
+
     },
   },
   plugins: [],
